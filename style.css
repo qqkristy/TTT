@@ -1,0 +1,15 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+table {
+   height:150px;
+   background: pink;
+}
+
+tr, td {
+	width: 50px;
+	border: 1px solid grey;
+	color: grey;
+	text-align: center;
+}
