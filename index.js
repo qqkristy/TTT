@@ -39,28 +39,6 @@ function boxFull(){ //when the table get full
   }
 }
 
-//  for(i=1; i<=3; i++)
-//    for(j=1; j<=3; j++)
-//      if (eval("ttt"+i+j).innerText == ""){
-//        return false;
-//      }  
-//      else{
-//        return true;
-//      }
-//    }
-
-
-//function cleanTable(){//cleaning the table
-//  for(i=1; i<=3; i++)
-//  {
-//    eval("ttt" + i + "1".innerText == "";
-//      eval("ttt" + i + "2").innerText == "";
-//      eval("ttt" + i + "3").innerText == "";
-//    }
-//  }
-
-
-
 function checkRow()
 {
 
