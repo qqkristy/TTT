@@ -89,6 +89,7 @@ function boxFull(){
     return false;
   }
 
+//ClearTable only works one time
   function clearTable(){
     var element11 = document.getElementById('ttt11');
     var element12 = document.getElementById('ttt12');
@@ -107,7 +108,7 @@ function boxFull(){
     element21.innerText = "";
     element22.innerText = "";
     element23.innerText = "";
-    element21.innerText = "";
+    element31.innerText = "";
     element32.innerText = "";
     element33.innerText = "";
 
