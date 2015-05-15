@@ -1,47 +1,47 @@
 
 var turn = 0;
 
-function playRound(oOrx){
-  if(oOrx.innerText == "" && turn == 0){
+function playRound(oOrx) {
+  if(oOrx.innerText == "" && turn == 0) {
     oOrx.innerText= "O";
     turn = 1;
   }
-  else if(oOrx.innerText == "" && turn == 1){
+  else if(oOrx.innerText == "" && turn == 1) {
     oOrx.innerText= "X";
     turn = 0;
   }
-  else{
+  else {
     confirm("Please select other empty boxes!!");
   }
 
-  if(checkRow()){
-    if(turn==0){
+  if(checkRow()) {
+    if(turn==0) {
       confirm("X Wins!!");
       clearTable();
     }
-    if(turn==1){
+    if(turn==1) {
       confirm("O Wins!!");
       clearTable();
     }
-    else if(boxFull()){
-      confirm("Game over!");
-      clearTable();
-    }
+  }
+  else if(boxFull()) {
+    confirm("Game over!");
+    clearTable();
   }
 }
 
 //Box Full function not working (For is not working) 
-function boxFull(){
-  for(i=1; i<=3; j++)
-    for(j=1; j<=3; j++)
+function boxFull() {
+  for(i=1; i<=3; i++) {
+    for(j=1; j<=3; j++) {
       var element = document.getElementById('ttt'+i+j);
-    if (element.innerText == ""){
-      return false;
-    }  
-    else{
-      return true;
+      if (element.innerText == "") {
+        return false;
+      }  
     }
   }
+  return true;
+}
 
   function checkRow(){
     var element11 = document.getElementById('ttt11');
